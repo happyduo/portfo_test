@@ -1,0 +1,37 @@
+<!-- <html>
+    <head>
+        <title>My website</title>
+        <link rel="stylesheet" type="text/css" href="static/style.css">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='ken.ico') }}">
+    </head>
+    <body>
+        <textarea id="user_input" rows="50" cols="50"></textarea>
+        <button class="button button--pan" onclick="print_result()">
+        <span>Click</span>
+        </button>
+        <p id="result"></p>
+        <script src="static/script.js"></script>
+    </body>
+</html> -->
+
+<html>
+  <head>
+    <title>Getting textarea input with JavaScript</title>
+  </head>
+  <body>
+    <textarea id="myTextArea"></textarea>
+    <button onclick="getTextAreaInput()">Get Input</button>
+    <script>
+      function getTextAreaInput() {
+        // Get the textarea element
+        var textArea = document.getElementById("myTextArea");
+
+        // Get the user input from the textarea
+        var userInput = textArea.value;
+
+        // Do something with the user input
+        alert("The user input is: " + userInput);
+      }
+    </script>
+  </body>
+</html>
